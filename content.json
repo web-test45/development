@@ -1,0 +1,84 @@
+{
+    "topBar": {
+      "phone": "+421 4323423 832 723",
+      "email": "info@3434elmip.sk"
+    },
+
+    "hero": {
+      "headline": "Priemys324234234elné podlahy Žilina",
+      "typedText": "Realiz23423423432ácie priemyselných podláh, leštený betón, liatie základových platní, kompletné betonárske práce a služby."
+    },
+
+    "services": {
+      "title": "Naše služby",
+      "subtitle": "Pôsobíme na celom Slovensku a máme viac ako 11 ročné skúsenosti s realizáciou priemyselných podláh.",
+      "items": [
+        {
+          "title": "🆓 Obhliadka zdarma",
+          "description": "Kontaktujte nás. Obhliadka a nacenenie je u nás vždy zdarma."
+        },
+        {
+          "title": "💰 Bezkonkurenčné ceny",
+          "description": "Ku každému zákazníkovi pristupujeme individuálne a garantujeme vám výhodné cenové podmienky."
+        },
+        {
+          "title": "🔧 Komplexné služby",
+          "description": "Ponúkame realizáciu priemyselných podláh: leštený betón, základové platne, vsypové podlahy, protišmykové metličkové úpravy. Široký výber farebných leštených podláh. Tiež rezanie a zváranie dilatácií, leštenie garáží, chodníkov, altánkov, príjazdových ciest, zváranie plechov a vinklov."
+        }
+      ]
+    },
+    "moreInfo": {
+      "title": "Viac informácií",
+      "subtitle": "Poznajte detaily o našich technológiách a riešeniach pre rôzne typy betónových podláh",
+      "cards": [
+        {
+          "title": "Podkladová betónová doska",
+          "subtitle": "so zavibrovaným povrchom",
+          "description": "Betón zavibrovaný ponornými vibrátormi a vyrovnaný buď ručne alebo vibračnou latou. Môže slúžiť ako základová doska pre ďalšie vrstvy podlahových konštrukcií alebo ako podkladový betón.",
+          "highlights": []
+        },
+        {
+          "title": "Betónová doska",
+          "subtitle": "so strojne zahladeným povrchom",
+          "description": "Povrch je hladký a vyznačuje sa vyššou odolnosťou. Úprava je vhodná pre epoxidové podlahy, pod podlahy kladené na betónovú dosku a pre podlahy pod ktoré sú kladené nároky na rovinatosť.",
+          "highlights": []
+        },
+        {
+          "title": "Betónová doska s povrchovou úpravou",
+          "subtitle": "priemyselným poterom WET TO WET – strojne zahladeným",
+          "description": "Povrch je hladký a vyznačuje sa vyššou odolnosťou voči obrusu, vysokými mechanickými odolnosťami a zvýšenými parametrami rovinnosti.",
+          "highlights": []
+        },
+        {
+          "title": "Pancierová betónová doska",
+          "subtitle": "Zušľachtený povrch s tvrdými agregátmi, strojne zahladený",
+          "description": "Povrch je hladký a vyznačuje sa vyššou odolnosťou voči obrusu a zlepšenými mechanickými odolnosťami.",
+          "highlights": [
+            "Odolnosť voči náročnému mechanickému zaťaženiu",
+            "Vysoká životnosť",
+            "Bezprašný hladký povrch",
+            "Nenáročná údržba a jednoduché čistenie",
+            "Rýchlosť realizácie v porovnaní s inými možnosťami"
+          ]
+        },
+        {
+          "title": "Cementobetónový kryt vozovky",
+          "subtitle": "S metličkovou štruktúrou povrchu",
+          "description": "Výhody:",
+          "highlights": [
+            "Oddolnosť voči zmenám teploty a poveternostným vplyvom",
+            "Oolnosť voči mechanickému zaťaženiu",
+            "Rýchlosť realizácie"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Naše realizácie",
+      "subtitle": "Za roky našej činnosti sme zrealizovali mnoho podláh. Prinášame vám výber niektorých z nich."
+    },
+
+    "footer": {
+      "text": "© 2021 erefwrvwr s.r.o. | Všetky práva vyhradené | Informácie o ochrane osobných údajov"
+    }
+  }
