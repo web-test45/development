@@ -1335,8 +1335,6 @@ document.addEventListener('click', function(event) {
 });
 
 
-
-const text = "Realizácie priemyselných podláh, leštený betón, liatie základových platní, kompletné betonárske práce a služby.";
     const typedTextSpan = document.getElementById("typed-text");
     const cursorSpan = document.getElementById("cursor");
 
@@ -1471,10 +1469,6 @@ fetch('content.json')
         </div>`;
       infoContainer.insertAdjacentHTML('beforeend', html);
     });
-
-    // Gallery
-    document.getElementById('gallery-title').textContent = data.gallery.title;
-    document.getElementById('gallery-subtitle').textContent = data.gallery.subtitle;
 
     // Footer
     document.getElementById('footer-text').textContent = data.footer.text;
