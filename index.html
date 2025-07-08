@@ -1335,85 +1335,12 @@ document.addEventListener('click', function(event) {
 });
 
 
-    const typedTextSpan = document.getElementById("typed-text");
-    const cursorSpan = document.getElementById("cursor");
-
-    let charIndex = 0;
-
-    function typeText() {
-        if (charIndex < text.length) {
-            typedTextSpan.textContent += text.charAt(charIndex);
-            charIndex++;
-            setTimeout(typeText, 40); // typing speed
-        } else {
-            setTimeout(() => {
-                typedTextSpan.textContent = "";
-                charIndex = 0;
-                typeText();
-            }, 5000); // wait before restarting loop
-        }
-    }
-
-    // Start typing on load
-    document.addEventListener("DOMContentLoaded", () => {
-        typeText();
-    });
-
-
-// Counter animation
-document.addEventListener('DOMContentLoaded', function () {
-    const counters = [
-        { id: 'counter1', target: 387 },
-        { id: 'counter2', target: 100, suffix: '%' },
-        { id: 'counter3', target: 11 }
-    ];
-
-    let hasCounted = false;
-
-    function animateCounter(el, target, duration = 1500, suffix = '') {
-        let start = 0;
-        const increment = target / (duration / 16);
-        const update = () => {
-            start += increment;
-            if (start < target) {
-                el.textContent = Math.floor(start) + suffix;
-                requestAnimationFrame(update);
-            } else {
-                el.textContent = target + suffix;
-            }
-        };
-        update();
-    }
-
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting && !hasCounted) {
-                hasCounted = true;
-                counters.forEach(counter => {
-                    const el = document.getElementById(counter.id);
-                    if (el) animateCounter(el, counter.target, 1500, counter.suffix || '');
-                });
-            }
-        });
-    }, { threshold: 0.5 });
-
-    document.querySelectorAll('.stat-number').forEach(el => {
-        observer.observe(el);
-    });
-});
-
-fetch('content.json')
-  .then(res => res.json())
-  .then(data => {
-    // Hero
-    document.getElementById('hero-headline').textContent = data.hero.headline;
-
-    // Typed text (skip: handled separately)
+function startTypedText(text) {
     const typedTextSpan = document.getElementById("typed-text");
     let charIndex = 0;
     function typeText() {
-      if (charIndex < data.hero.typedText.length) {
-        typedTextSpan.textContent += data.hero.typedText.charAt(charIndex++);
+      if (charIndex < text.length) {
+        typedTextSpan.textContent += text.charAt(charIndex++);
         setTimeout(typeText, 40);
       } else {
         setTimeout(() => {
@@ -1424,55 +1351,80 @@ fetch('content.json')
       }
     }
     typeText();
+  }
 
-    // Stats
-    data.stats.forEach((stat, index) => {
-      document.getElementById(`counter${index + 1}`).textContent = stat.value;
-      document.getElementById(`counter${index + 1}-label`).textContent = stat.label;
+  function toggleInfoCard(clickedHeader) {
+    const clickedCard = clickedHeader.closest('.info-card');
+    const content = clickedCard.querySelector('.info-content');
+    const isActive = clickedCard.classList.contains('active');
+    document.querySelectorAll('.info-card').forEach(card => {
+      const c = card.querySelector('.info-content');
+      card.classList.remove('active');
+      c.style.maxHeight = null;
+      c.style.marginTop = '0';
+      c.style.marginBottom = '0';
     });
+    if (!isActive) {
+      clickedCard.classList.add('active');
+      content.style.maxHeight = content.scrollHeight + 'px';
+      content.style.marginTop = '25px';
+      content.style.marginBottom = '30px';
+    }
+  }
 
-    // Services
-    document.getElementById('services-title').textContent = data.services.title;
-    document.getElementById('services-subtitle').textContent = data.services.subtitle;
+  fetch('content.json')
+    .then(res => res.json())
+    .then(data => {
+      // Top Bar
+      document.getElementById('topbar-phone').textContent = data.topBar.phone;
+      document.getElementById('topbar-email').textContent = data.topBar.email;
 
-    const servicesContainer = document.getElementById('services-list');
-    data.services.items.forEach(item => {
-      const card = document.createElement('div');
-      card.className = 'service-card';
-      card.innerHTML = `<h3>${item.title}</h3><p>${item.description}</p>`;
-      servicesContainer.appendChild(card);
-    });
+      // Hero Section
+      document.getElementById('hero-headline').textContent = data.hero.headline;
+      startTypedText(data.hero.typedText);
 
-    // More Info
-    document.getElementById('moreinfo-title').textContent = data.moreInfo.title;
-    document.getElementById('moreinfo-subtitle').textContent = data.moreInfo.subtitle;
+      // Services Section
+      document.getElementById('services-title').textContent = data.services.title;
+      document.getElementById('services-subtitle').textContent = data.services.subtitle;
 
-    const infoContainer = document.getElementById('moreinfo-cards');
-    data.moreInfo.cards.forEach(card => {
-      const highlights = card.highlights.map(h => `<div class="highlight-item">${h}</div>`).join('');
-      const highlightSection = highlights ? `<div class="info-highlights">${highlights}</div>` : '';
-      const html = `
-        <div class="info-card fade-in-up">
-          <div class="info-header" onclick="toggleInfoCard(this.parentElement)">
-            <div class="info-icon"><i class="fa-solid fa-circle-info"></i></div>
-            <div class="info-text">
-              <h3 class="info-title">${card.title}</h3>
-              <div class="info-subtitle">${card.subtitle}</div>
+      const servicesContainer = document.getElementById('services-list');
+      data.services.items.forEach(item => {
+        const card = document.createElement('div');
+        card.className = 'service-card';
+        card.innerHTML = `<h3>${item.title}</h3><p>${item.description}</p>`;
+        servicesContainer.appendChild(card);
+      });
+
+      // More Info Section
+      document.getElementById('moreinfo-title').textContent = data.moreInfo.title;
+      document.getElementById('moreinfo-subtitle').textContent = data.moreInfo.subtitle;
+
+      const infoContainer = document.getElementById('moreinfo-cards');
+      data.moreInfo.cards.forEach(card => {
+        const highlights = card.highlights.map(h => `<div class="highlight-item">${h}</div>`).join('');
+        const highlightSection = highlights ? `<div class="info-highlights">${highlights}</div>` : '';
+        const html = `
+          <div class="info-card fade-in-up">
+            <div class="info-header" onclick="toggleInfoCard(this)">
+              <div class="info-icon"><i class="fa-solid fa-circle-info"></i></div>
+              <div class="info-text">
+                <h3 class="info-title">${card.title}</h3>
+                <div class="info-subtitle">${card.subtitle}</div>
+              </div>
+              <div class="triangle-indicator"></div>
             </div>
-            <div class="triangle-indicator"></div>
-          </div>
-          <div class="info-content">
-            <p class="info-description">${card.description}</p>
-            ${highlightSection}
-            <a href="#contact" class="btn-secondary">Objednať</a>
-          </div>
-        </div>`;
-      infoContainer.insertAdjacentHTML('beforeend', html);
-    });
+            <div class="info-content">
+              <p class="info-description">${card.description}</p>
+              ${highlightSection}
+              <a href="#contact" class="btn-secondary">Objednať</a>
+            </div>
+          </div>`;
+        infoContainer.insertAdjacentHTML('beforeend', html);
+      });
 
-    // Footer
-    document.getElementById('footer-text').textContent = data.footer.text;
-  });
+      // Footer
+      document.getElementById('footer-text').textContent = data.footer.text;
+    });
     </script>
 </body>
 </html>
