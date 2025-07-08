@@ -1,84 +1,77 @@
 {
     "topBar": {
-      "phone": "+421 4323423 832 723",
-      "email": "info@3434elmip.sk"
+      "phone": "+421 911 234 567",
+      "email": "info@drevomasiv.sk"
     },
-
     "hero": {
-      "headline": "Priemys324234234elné podlahy Žilina",
-      "typedText": "Realiz23423423432ácie priemyselných podláh, leštený betón, liatie základových platní, kompletné betonárske práce a služby."
+      "headline": "Kvalitný nábytok a dvere z masívu na mieru",
+      "typedText": "Výroba masívneho nábytku, interiérových a exteriérových dverí na mieru, drevených obkladov a stolárske služby s dôrazom na detail a kvalitu."
     },
-
     "services": {
       "title": "Naše služby",
-      "subtitle": "Pôsobíme na celom Slovensku a máme viac ako 11 ročné skúsenosti s realizáciou priemyselných podláh.",
+      "subtitle": "Pôsobíme po celom Slovensku a máme dlhoročné skúsenosti s výrobou nábytku a dverí z masívneho dreva.",
       "items": [
         {
-          "title": "🆓 Obhliadka zdarma",
-          "description": "Kontaktujte nás. Obhliadka a nacenenie je u nás vždy zdarma."
+          "title": "🆓 Bezplatná obhliadka a návrh",
+          "description": "Zavolajte nám – radi k vám prídeme, zameriame priestor, poradíme a pripravíme návrh riešenia na mieru zdarma."
         },
         {
-          "title": "💰 Bezkonkurenčné ceny",
-          "description": "Ku každému zákazníkovi pristupujeme individuálne a garantujeme vám výhodné cenové podmienky."
+          "title": "💰 Výborný pomer kvality a ceny",
+          "description": "Používame len kvalitné materiály a každý kus vyrábame s dôrazom na precíznosť – za férovú cenu."
         },
         {
-          "title": "🔧 Komplexné služby",
-          "description": "Ponúkame realizáciu priemyselných podláh: leštený betón, základové platne, vsypové podlahy, protišmykové metličkové úpravy. Široký výber farebných leštených podláh. Tiež rezanie a zváranie dilatácií, leštenie garáží, chodníkov, altánkov, príjazdových ciest, zváranie plechov a vinklov."
+          "title": "🪵 Výroba z masívneho dreva",
+          "description": "Vyrábame nábytok, dvere a obklady z masívu – dub, buk, borovica. Každý výrobok je originál s dlhou životnosťou a estetickou hodnotou."
         }
       ]
     },
     "moreInfo": {
-      "title": "Viac informácií",
-      "subtitle": "Poznajte detaily o našich technológiách a riešeniach pre rôzne typy betónových podláh",
+      "title": "Viac o našich produktoch",
+      "subtitle": "Spojte funkčnosť a prírodnú krásu s kvalitným drevom v interiéri aj exteriéri.",
       "cards": [
         {
-          "title": "Podkladová betónová doska",
-          "subtitle": "so zavibrovaným povrchom",
-          "description": "Betón zavibrovaný ponornými vibrátormi a vyrovnaný buď ručne alebo vibračnou latou. Môže slúžiť ako základová doska pre ďalšie vrstvy podlahových konštrukcií alebo ako podkladový betón.",
+          "title": "Nábytok z masívu",
+          "subtitle": "Trvácnosť a prirodzená elegancia",
+          "description": "Masívny nábytok pre každú miestnosť – od stolov a stoličiek, cez skrine a postele až po kuchyne. Vyrábame aj na mieru, presne podľa vašich predstáv.",
           "highlights": []
         },
         {
-          "title": "Betónová doska",
-          "subtitle": "so strojne zahladeným povrchom",
-          "description": "Povrch je hladký a vyznačuje sa vyššou odolnosťou. Úprava je vhodná pre epoxidové podlahy, pod podlahy kladené na betónovú dosku a pre podlahy pod ktoré sú kladené nároky na rovinatosť.",
+          "title": "Dvere z masívu",
+          "subtitle": "Kvalita, štýl a izolácia",
+          "description": "Interiérové aj exteriérové dvere z masívneho dreva. Tradičné aj moderné dizajny, výborné izolačné vlastnosti a vysoká životnosť.",
           "highlights": []
         },
         {
-          "title": "Betónová doska s povrchovou úpravou",
-          "subtitle": "priemyselným poterom WET TO WET – strojne zahladeným",
-          "description": "Povrch je hladký a vyznačuje sa vyššou odolnosťou voči obrusu, vysokými mechanickými odolnosťami a zvýšenými parametrami rovinnosti.",
+          "title": "Nábytok na mieru",
+          "subtitle": "Navrhnutý pre váš domov",
+          "description": "Vyrábame kuchynské linky, vstavané skrine, komody či knižnice na mieru. Prispôsobíme sa vašim potrebám, štýlu a priestoru.",
           "highlights": []
         },
         {
-          "title": "Pancierová betónová doska",
-          "subtitle": "Zušľachtený povrch s tvrdými agregátmi, strojne zahladený",
-          "description": "Povrch je hladký a vyznačuje sa vyššou odolnosťou voči obrusu a zlepšenými mechanickými odolnosťami.",
+          "title": "Drevené obklady",
+          "subtitle": "Prírodný dizajn pre steny aj fasády",
+          "description": "Obklady z kvalitného dreva pre interiér aj exteriér. Estetické, trvácne a odolné voči počasiu. Ideálne na steny, stropy či fasády.",
           "highlights": [
-            "Odolnosť voči náročnému mechanickému zaťaženiu",
-            "Vysoká životnosť",
-            "Bezprašný hladký povrch",
-            "Nenáročná údržba a jednoduché čistenie",
-            "Rýchlosť realizácie v porovnaní s inými možnosťami"
+            "Odolné voči poveternostným vplyvom",
+            "Jedinečný prírodný vzhľad",
+            "Vhodné pre moderné aj tradičné priestory",
+            "Jednoduchá údržba"
           ]
         },
         {
-          "title": "Cementobetónový kryt vozovky",
-          "subtitle": "S metličkovou štruktúrou povrchu",
-          "description": "Výhody:",
+          "title": "Precízne spracovanie dreva",
+          "subtitle": "Remeselná kvalita a detail",
+          "description": "Naša práca je postavená na poctivom remesle a láske k drevu. Každý výrobok prechádza dôkladnou kontrolou a finálnou úpravou pre maximálnu spokojnosť zákazníka.",
           "highlights": [
-            "Oddolnosť voči zmenám teploty a poveternostným vplyvom",
-            "Oolnosť voči mechanickému zaťaženiu",
-            "Rýchlosť realizácie"
+            "Starostlivo vyberané drevo",
+            "Povrchová úprava podľa požiadaviek",
+            "Dlhoročná trvácnosť a funkčnosť"
           ]
         }
       ]
     },
-    "gallery": {
-      "title": "Naše realizácie",
-      "subtitle": "Za roky našej činnosti sme zrealizovali mnoho podláh. Prinášame vám výber niektorých z nich."
-    },
-
     "footer": {
-      "text": "© 2021 erefwrvwr s.r.o. | Všetky práva vyhradené | Informácie o ochrane osobných údajov"
+      "text": "© 2025 DrevoMasiv s.r.o. | Všetky práva vyhradené | Informácie o ochrane osobných údajov"
     }
   }
+  
