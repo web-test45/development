@@ -1425,6 +1425,48 @@ function startTypedText(text) {
       // Footer
       document.getElementById('footer-text').textContent = data.footer.text;
     });
+
+    // Counter animation
+document.addEventListener('DOMContentLoaded', function () {
+    const counters = [
+        { id: 'counter1', target: 387 },
+        { id: 'counter2', target: 100, suffix: '%' },
+        { id: 'counter3', target: 11 }
+    ];
+
+    let hasCounted = false;
+
+    function animateCounter(el, target, duration = 1500, suffix = '') {
+        let start = 0;
+        const increment = target / (duration / 16);
+        const update = () => {
+            start += increment;
+            if (start < target) {
+                el.textContent = Math.floor(start) + suffix;
+                requestAnimationFrame(update);
+            } else {
+                el.textContent = target + suffix;
+            }
+        };
+        update();
+    }
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !hasCounted) {
+                hasCounted = true;
+                counters.forEach(counter => {
+                    const el = document.getElementById(counter.id);
+                    if (el) animateCounter(el, counter.target, 1500, counter.suffix || '');
+                });
+            }
+        });
+    }, { threshold: 0.5 });
+
+    document.querySelectorAll('.stat-number').forEach(el => {
+        observer.observe(el);
+    });
+});
     </script>
 </body>
 </html>
