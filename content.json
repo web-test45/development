@@ -3,6 +3,11 @@
       "phone": "0948 894 899",
       "email": "info@drevomasiv.sk"
     },
+
+    "header": {
+    "logoText": "Elmip"
+    },
+    
     "hero": {
       "headline": "Kvalitné dvere a nábytok na mieru",
       "typedText": "Výroba masívneho nábytku, interiérových a exteriérových dverí na mieru, drevených obkladov a stolárske služby s dôrazom na detail a kvalitu."
