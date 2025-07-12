@@ -1,11 +1,11 @@
 {
     "topBar": {
       "phone": "0948 894 899",
-      "email": "info@drevomasiv.sk"
+      "email": "info@kompletdom.sk"
     },
 
     "header": {
-    "logoText": "DrevoMasiv s.r.o."
+    "logoText": "Komplet Dom s.r.o."
     },
     
     "hero": {
@@ -76,7 +76,7 @@
       ]
     },
     "footer": {
-      "text": "© 2025 DrevoMasiv s.r.o. | Všetky práva vyhradené | Informácie o ochrane osobných údajov"
+      "text": "© 2025 KompletDom s.r.o. | Všetky práva vyhradené | Informácie o ochrane osobných údajov"
     }
   }
   
