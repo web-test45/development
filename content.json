@@ -3,18 +3,18 @@
       "phone": "0948 894 899",
       "email": "info@kompletdom.sk"
     },
-
+  
     "header": {
-    "logoText": "KompletDom"
+      "logoText": "KompletDom s.r.o."
     },
     
     "hero": {
-      "headline": "Kvalitné dvere a nábytok na mieru",
-      "typedText": "Výroba masívneho nábytku, interiérových a exteriérových dverí na mieru, drevených obkladov a stolárske služby s dôrazom na detail a kvalitu."
+      "headline": "Moderný nábytok a schody na mieru",
+      "typedText": "Výroba nábytku a schodov ktoré oživia váš domov."
     },
     "services": {
       "title": "Naše služby",
-      "subtitle": "Pôsobíme po celom Slovensku a máme dlhoročné skúsenosti s výrobou nábytku a dverí z masívneho dreva.",
+      "subtitle": "Pôsobíme najmä po západnom Slovensku a máme dlhoročné skúsenosti s výrobou nábytku a schodov.",
       "items": [
         {
           "title": "🆓 Bezplatná obhliadka a návrh",
@@ -25,50 +25,33 @@
           "description": "Používame len kvalitné materiály a každý kus vyrábame s dôrazom na precíznosť – za férovú cenu."
         },
         {
-          "title": "🪵 Výroba z masívneho dreva",
-          "description": "Vyrábame nábytok, dvere a obklady z masívu – dub, buk, borovica. Každý výrobok je originál s dlhou životnosťou a estetickou hodnotou."
+          "title": "🪵 Laminátový nábytok a schody z masívu",
+          "description": "Vyrábame kvalitný nábytok z laminátu a schody na mieru z masívu. Každý projekt prispôsobíme presne vašim požiadavkám."
         }
       ]
     },
     "moreInfo": {
       "title": "Viac o našich produktoch",
-      "subtitle": "Spojte funkčnosť a prírodnú krásu s kvalitným drevom v interiéri aj exteriéri.",
+      "subtitle": "Spojte funkčnosť a dizajn s kvalitným spracovaním pre váš interiér.",
       "cards": [
         {
-          "title": "Nábytok z masívu",
-          "subtitle": "Trvácnosť a prirodzená elegancia",
-          "description": "Masívny nábytok pre každú miestnosť – od stolov a stoličiek, cez skrine a postele až po kuchyne. Vyrábame aj na mieru, presne podľa vašich predstáv.",
+          "title": "Nábytok z laminátu",
+          "subtitle": "Moderný a praktický",
+          "description": "Vyrábame vstavané skrine, kuchynské linky, komody a ďalší nábytok z laminovaných materiálov podľa vašich požiadaviek. Vysoká odolnosť, široká ponuka dekorov a precízne spracovanie.",
           "highlights": []
         },
         {
-          "title": "Dvere z masívu",
-          "subtitle": "Kvalita, štýl a izolácia",
-          "description": "Interiérové aj exteriérové dvere z masívneho dreva. Tradičné aj moderné dizajny, výborné izolačné vlastnosti a vysoká životnosť.",
+          "title": "Schody na mieru z masívu",
+          "subtitle": "Estetika a stabilita",
+          "description": "Navrhujeme a vyrábame drevené schody presne podľa vášho priestoru a štýlu. Každý schod je remeselne opracovaný s dôrazom na pevnosť a vzhľad.",
           "highlights": []
         },
         {
-          "title": "Nábytok na mieru",
-          "subtitle": "Navrhnutý pre váš domov",
-          "description": "Vyrábame kuchynské linky, vstavané skrine, komody či knižnice na mieru. Prispôsobíme sa vašim potrebám, štýlu a priestoru.",
-          "highlights": []
-        },
-        {
-          "title": "Drevené obklady",
-          "subtitle": "Prírodný dizajn pre steny aj fasády",
-          "description": "Obklady z kvalitného dreva pre interiér aj exteriér. Estetické, trvácne a odolné voči počasiu. Ideálne na steny, stropy či fasády.",
-          "highlights": [
-            "Odolné voči poveternostným vplyvom",
-            "Jedinečný prírodný vzhľad",
-            "Vhodné pre moderné aj tradičné priestory",
-            "Jednoduchá údržba"
-          ]
-        },
-        {
-          "title": "Precízne spracovanie dreva",
+          "title": "Precízne spracovanie materiálov",
           "subtitle": "Remeselná kvalita a detail",
-          "description": "Naša práca je postavená na poctivom remesle a láske k drevu. Každý výrobok prechádza dôkladnou kontrolou a finálnou úpravou pre maximálnu spokojnosť zákazníka.",
+          "description": "Naša práca je postavená na poctivom remesle a láske k detailu. Každý výrobok prechádza dôkladnou kontrolou a finálnou úpravou pre maximálnu spokojnosť zákazníka.",
           "highlights": [
-            "Starostlivo vyberané drevo",
+            "Starostlivo vyberané materiály",
             "Povrchová úprava podľa požiadaviek",
             "Dlhoročná trvácnosť a funkčnosť"
           ]
@@ -76,7 +59,7 @@
       ]
     },
     "footer": {
-      "text": "© 2025 DrevoMasiv s.r.o. | Všetky práva vyhradené | Informácie o ochrane osobných údajov"
+      "text": "© 2025 KompletDom s.r.o. | Všetky práva vyhradené | Informácie o ochrane osobných údajov"
     }
   }
   
