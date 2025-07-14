@@ -55,7 +55,18 @@
             "Povrchová úprava podľa požiadaviek",
             "Dlhoročná trvácnosť a funkčnosť"
           ]
-        }
+        },
+        {
+            "title": "Individuálny dizajn",
+            "subtitle": "Každý projekt je originál",
+            "description": "Váš interiér je jedinečný – a my k nemu pristupujeme rovnako. Pri stavbe schodov navrhujeme riešenia, ktoré zodpovedajú vášmu štýlu, potrebám a priestoru. Spoločne vytvoríme funkčný a estetický celok.",
+            "highlights": [
+              "Dizajn podľa vašich predstáv",
+              "Prispôsobenie každému priestoru",
+              "Kombinácia estetiky a funkčnosti"
+            ]
+          }
+          
       ]
     },
     "footer": {
